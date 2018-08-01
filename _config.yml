@@ -1,0 +1,36 @@
+title: Your awesome title
+author: author
+email: your@email.com
+description: El Psy Congroo
+
+# socail links
+github_username: kemingy
+rss: rss
+
+show_excerpts: true
+
+theme: jekyll-theme-ink
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-archives
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+mathjax:
+  enable: true
+  cdn: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      excerpt_separator: <!-- more -->
+
