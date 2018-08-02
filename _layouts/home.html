@@ -16,16 +16,22 @@ layout: default
         <ul class="post-list">
             {%- for post in site.posts -%}
             <li>
-                {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
-                <span class="post-meta">{{ post.date | date: date_format }}</span>
-                <h3>
-                    <a href="{{ post.url | relative_url }}" class="post-link">
-                        {{ post.title | escape }}
-                    </a>
-                </h3>
-                {%- if site.show_excerpts -%}
-                    {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-                {%- endif -%}
+                <div class="timeline">
+                    {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+                    <div class="timeline-date">
+                        <span class="post-meta">{{ post.date | date: date_format }}</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>
+                            <a href="{{ post.url | relative_url }}" class="post-link">
+                                {{ post.title | escape }}
+                            </a>
+                        </h3>
+                        {%- if site.show_excerpts -%}
+                            {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+                        {%- endif -%}
+                    </div>
+                </div>
             </li>
             {%- endfor -%}
         </ul>
