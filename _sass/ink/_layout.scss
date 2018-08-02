@@ -64,30 +64,6 @@
         cursor: pointer;
         }
 
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                fill: $grey-color-dark;
-            }
-        }
-
-        input ~ .trigger {
-        clear: both;
-        display: none;
-        }
-
-        input:checked ~ .trigger {
-        display: block;
-        padding-bottom: 5px;
-        }
-
         .page-link {
         display: block;
         padding: 5px 10px;
@@ -207,6 +183,26 @@
     @include relative-font-size(1.5);
 }
 
+.post-category {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 2px;
+    border-left: 4px solid;
+    min-width: 20px;
+    margin: 5px;
+    color: #fff;
+    background: $grey-color-light;
+    position: relative;
+    text-decoration: none;
+}
+
+.post-category:hover {
+    background-color: $grey-color;
+}
+
+.post-category:visited {
+    color: $grey-color-dark;
+}
 
 
 /**

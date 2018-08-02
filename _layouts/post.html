@@ -19,6 +19,11 @@ layout: default
                     <span class="author" itemprop="name">{{ page.author }}</span>
                 </span>
             {%- endif -%}
+            {%- for cate in page.categories -%}
+                <a href="/category/{{ cate }}"  class="post-category">
+                    {{ cate | escape }}
+                </a>
+            {%- endfor -%}
         </p>
     </header>
 
