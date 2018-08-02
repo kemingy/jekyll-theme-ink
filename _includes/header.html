@@ -21,9 +21,12 @@
                     {%- for path in page_paths -%}
                         {%- assign cur_page = site.pages | where: "path", path | first -%}
                         {%- if cur_page.title and cur_page.title != '404' -%}
-                            <a href="{{ cur_page.url | relative_url }}" class="page-link">
-                                {{ cur_page.title | escape}}
-                            </a>
+                            {%- unless cur_page.path contains '/' -%}
+                                <a href="{{ cur_page.url | relative_url }}" class="page-link">
+                                    {{ cur_page.title | escape}}
+                                </a>
+                            {%- endunless -%}
+                            <!-- {{ cur_page.path }} -->
                         {%- endif -%}
                     {%- endfor -%}
                 </div>

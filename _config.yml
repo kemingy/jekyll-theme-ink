@@ -11,6 +11,8 @@ show_excerpts: true
 
 theme: jekyll-theme-ink
 
+permalink: /blog/:title
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -34,3 +36,12 @@ defaults:
       layout: "post"
       excerpt_separator: <!-- more -->
 
+jekyll-archives:
+  enabled: all
+  layout: 'archive'
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
