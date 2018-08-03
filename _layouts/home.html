@@ -28,7 +28,7 @@ layout: default
                             </a>
                         </h3>
                         {%- if site.show_excerpts -%}
-                            {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+                            {{ post.excerpt | remove: '<p>' | remove: '</p>' | truncate: 300 }}
                         {%- endif -%}
                     </div>
                 </div>
