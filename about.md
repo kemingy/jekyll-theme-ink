@@ -3,10 +3,14 @@ layout: page
 title: About
 ---
 
-## This is Jekyll ink theme.
+This is Jekyll ink theme.
 
-test markdown...
+### Feature
 
-- [ ] haha
-- [x] hahaha
+- [x] Archive with categories
+- [x] Mathjax
+- [x] Google Analystics
+- [x] SEO with jekyll-seo-tag
+- [x] RSS
+- [x] sitemap
 
