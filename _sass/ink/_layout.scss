@@ -64,6 +64,30 @@
             cursor: pointer;
         }
 
+        .menu-icon {
+            display: block;
+            float: right;
+            width: 36px;
+            height: 26px;
+            line-height: 0;
+            padding-top: 10px;
+            text-align: center;
+      
+            > svg {
+              fill: $grey-color-dark;
+            }
+          }
+      
+          input ~ .trigger {
+            clear: both;
+            display: none;
+          }
+      
+          input:checked ~ .trigger {
+            display: block;
+            padding-bottom: 5px;
+          }
+
         .page-link {
             display: block;
             padding: 5px 10px;
@@ -263,7 +287,7 @@
         }
 
         &:before {
-            content: '/';
+            content: '>';
             color: $before-header-color;
             padding-right: 0.5em;
         }
@@ -277,7 +301,7 @@
         }
 
         &:before {
-            content: '//';
+            content: '≫';
             color: $before-header-color;
             padding-right: 0.5em;
         }
@@ -291,7 +315,7 @@
         }
 
         &:before {
-            content: '///';
+            content: '⋙';
             color: $before-header-color;
             padding-right: 0.5em;
         }
@@ -303,11 +327,29 @@
         @include media-query($on-laptop) {
             @include relative-font-size(1.125);
         }
+    }
+}
 
-        &:before {
-            content: '////';
-            color: $before-header-color;
-            padding-right: 0.5em;
-        }
+.post-card {
+    border: solid #fafafa;
+    padding: 5px 15px;
+    margin: 5px 5px;
+    box-shadow: 3px 3px 5px #d3d3d3;
+    border-radius: 5px;
+    min-width: 200px;
+    display: inline-block;
+}
+
+.post-date {
+    display: inline-block;
+    color: $grey-color;
+    padding: 0 15px 0 0;
+    font-style: italic;
+}
+
+.post-name {
+    display: inline-block;
+    a {
+        font-size: 1.2em;
     }
 }
