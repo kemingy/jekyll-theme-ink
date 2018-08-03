@@ -5,7 +5,7 @@ title: About
 
 This is Jekyll ink theme.
 
-### Feature
+## Feature
 
 - [x] Archive with categories
 - [x] MathJax
@@ -15,3 +15,4 @@ This is Jekyll ink theme.
 - [x] sitemap
 - [ ] Adapt mobile
 
+{% include friends.html %}
