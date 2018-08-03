@@ -6,9 +6,11 @@
 .highlight {
     background: #fff;
     @extend %vertical-rhythm;
+    box-shadow: 5px 5px 10px #888888;
+    border: #e5e5e5;
 
     .highlighter-rouge & {
-        background: #E2E3E8;
+        background: $code-background-color;
     }
 
     .c     { color: #998; font-style: italic } // Comment

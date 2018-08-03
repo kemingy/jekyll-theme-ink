@@ -144,12 +144,12 @@ code {
     @include relative-font-size(0.9375);
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #E2E3E8;
+    background-color: $code-background-color;
 }
 
 code {
     font-family: 'Lucida Console', Courier, monospace;
-    padding: 1px 5px;
+    padding: 2px 5px;
 }
 
 pre {

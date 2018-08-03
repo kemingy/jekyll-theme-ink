@@ -42,7 +42,7 @@
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
-        margin-right: 20px;
+            margin-right: 20px;
         }
     }
 
@@ -56,22 +56,22 @@
         text-align: right;
 
         label[for="nav-trigger"] {
-        display: block;
-        float: right;
-        width: 36px;
-        height: 36px;
-        z-index: 2;
-        cursor: pointer;
+            display: block;
+            float: right;
+            width: 36px;
+            height: 36px;
+            z-index: 2;
+            cursor: pointer;
         }
 
         .page-link {
-        display: block;
-        padding: 5px 10px;
+            display: block;
+            padding: 5px 10px;
 
-        &:not(:last-child) {
-            margin-right: 0;
-        }
-        margin-left: 20px;
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+            margin-left: 20px;
         }
     }
 }
@@ -228,6 +228,12 @@
         @include media-query($on-laptop) {
             @include relative-font-size(2);
         }
+
+        &:before {
+            content: '/';
+            color: $before-header-color;
+            padding-right: 0.5em;
+        }
     }
 
     h2 {
@@ -235,6 +241,12 @@
 
         @include media-query($on-laptop) {
             @include relative-font-size(1.75);
+        }
+
+        &:before {
+            content: '//';
+            color: $before-header-color;
+            padding-right: 0.5em;
         }
     }
 
@@ -244,6 +256,12 @@
         @include media-query($on-laptop) {
             @include relative-font-size(1.375);
         }
+
+        &:before {
+            content: '///';
+            color: $before-header-color;
+            padding-right: 0.5em;
+        }
     }
 
     h4 {
@@ -251,6 +269,12 @@
 
         @include media-query($on-laptop) {
             @include relative-font-size(1.125);
+        }
+
+        &:before {
+            content: '////';
+            color: $before-header-color;
+            padding-right: 0.5em;
         }
     }
 }
