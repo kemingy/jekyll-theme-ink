@@ -37,11 +37,12 @@ defaults:
       excerpt_separator: <!-- more -->
 
 jekyll-archives:
-  enabled: all
-  layout: 'archive'
+  enabled: [categories, year, month, tags]
+  layouts:
+    category: 'category'
   permalinks:
     year: '/:year/'
     month: '/:year/:month/'
-    day: '/:year/:month/:day/'
     tag: '/tag/:name/'
     category: '/category/:name/'
+
