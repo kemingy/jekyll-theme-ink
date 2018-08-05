@@ -14,10 +14,10 @@ layout: default
             {{ page.list_title | default: "Posts" }}
         </h2>
         <ul class="post-list">
+            {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
             {%- for post in site.posts -%}
             <li>
                 <div class="timeline">
-                    {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
                     <div class="timeline-date">
                         <span class="post-meta">{{ post.date | date: date_format }}</span>
                     </div>

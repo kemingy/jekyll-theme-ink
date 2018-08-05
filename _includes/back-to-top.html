@@ -17,9 +17,10 @@
             window.scrollTo(0, Math.round(cosParameter + cosParameter * Math.cos(scrollCount)));
             oldTimestamp = newTimestamp;
             window.requestAnimationFrame(step);
+            console.log('step...');
         }
         window.requestAnimationFrame(step);
-        document.getElementById('back-to-top').style.display = none;
+        document.getElementById('back-to-top').style.display = 'none';
     }
 
     document.getElementById('back-to-top').click(scrollToTop);

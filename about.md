@@ -13,6 +13,6 @@ This is Jekyll ink theme.
 - [x] SEO with jekyll-seo-tag
 - [x] RSS
 - [x] sitemap
-- [ ] Adapt mobile
+- [x] Adapt mobile
 
 {% include friends.html %}

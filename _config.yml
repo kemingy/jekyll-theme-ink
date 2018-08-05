@@ -13,6 +13,10 @@ theme: jekyll-theme-ink
 
 permalink: /blog/:title
 
+favicon:
+  display: true
+  name: favicon.ico
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
