@@ -14,6 +14,8 @@ Preview [demo](https://kemingy.github.io/jekyll-theme-ink/)
 - [x] Sitemap
 - [x] Adapt mobile
 
+`jekyll-archives` is not supported by GitHub Pages [PR](https://github.com/github/pages-gem/pull/106). You need to build it yourself if you want to use this. You can use Travis CI to do this for you.
+
 
 ## Installation
 
