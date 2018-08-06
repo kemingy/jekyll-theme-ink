@@ -16,7 +16,7 @@ theme: jekyll-theme-ink
 permalink: /blog/:title
 
 favicon:
-  enable: true
+  enable: false
   name: favicon.ico
 
 plugins:

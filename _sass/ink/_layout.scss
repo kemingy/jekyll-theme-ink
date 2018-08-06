@@ -276,6 +276,10 @@
     width: 100%;
     display: grid;
     grid-template-columns: 180px 1fr;
+
+    @include media-query($on-palm) {
+        display: inline;
+    }
 }
 
 .timeline-date {
