@@ -4,6 +4,8 @@ This is a simple jekyll theme based on [minima](https://github.com/jekyll/minima
 
 Preview [demo](https://kemingy.github.io/jekyll-theme-ink/)
 
+![](./screenshot.png)
+
 ## Feature
 
 - [x] Archive with categories

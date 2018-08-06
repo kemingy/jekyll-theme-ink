@@ -6,13 +6,13 @@ rvm: 2.5
 install:
   - gem install bundler
   - bundle install
+  - echo "baseurl: /jekyll-theme-ink" >> ./_config.yml
 
 script:
   - bundle exec jekyll build
 
 after_success:
   - touch ./_site/.nojekyll
-  - echo "baseurl: https://kemingy.github.io/jekyll-theme-ink" >> _config.yml
 
 deploy:
   provider: pages
