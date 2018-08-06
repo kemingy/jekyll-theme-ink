@@ -11,7 +11,7 @@ excerpts:
   enable: true
   length: 300
 
-remote_theme: kemingy/jekyll-theme-ink
+# remote_theme: kemingy/jekyll-theme-ink
 
 permalink: /blog/:title
 
