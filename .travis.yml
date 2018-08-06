@@ -6,7 +6,7 @@ rvm: 2.5
 install:
   - gem install bundler
   - bundle install
-  - echo "baseurl: /jekyll-theme-ink" >> ./_config.yml
+  - echo baseurl: /jekyll-theme-ink >> ./_config.yml
 
 script:
   - bundle exec jekyll build
