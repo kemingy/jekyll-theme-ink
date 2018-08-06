@@ -13,4 +13,4 @@ else
     exit 1
 fi
 
-gem build jekyll-theme-ink.gemspec
+touch ./_site/.nojekyll

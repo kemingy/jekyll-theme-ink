@@ -5,3 +5,13 @@ rvm: 2.5
 
 install: script/bootstrap.sh
 script: script/cibuild.sh
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  keep-history: true
+  on:
+    branch: master
+  github-token: $GITHUB_TOKEN
+  local-dir: docs/build/html
+  committer-from-gh: true
