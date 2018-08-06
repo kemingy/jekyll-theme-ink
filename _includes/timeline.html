@@ -1,3 +1,16 @@
 <div class="timeline">
-    
+    <div class="date-meta">
+        {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+        {{ post.date | date: date_format }}
+    </div>
+    <div class="post-card">
+        <div class="post-title">
+            {{ post.title | escape }}
+        </div>
+        {%- if site.excerpts.enable -%}
+        <div class="post-excerpt">
+            {{ post.excerpt | remove: '<p>' | remove: '</p>' | truncate: site.excerpts.length }}
+        </div>
+        {%- endif -%}
+    </div>
 </div>

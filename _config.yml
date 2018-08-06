@@ -7,14 +7,16 @@ description: El Psy Congroo
 github_username: jekyll
 rss: rss
 
-show_excerpts: true
+excerpts:
+  enable: true
+  length: 300
 
 theme: jekyll-theme-ink
 
 permalink: /blog/:title
 
 favicon:
-  display: true
+  enable: true
   name: favicon.ico
 
 plugins:

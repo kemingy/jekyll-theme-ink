@@ -3,7 +3,7 @@
         {%- assign default_paths = site.pages | map: "path" -%}
         {%- assign page_paths = site.header_pages | default: default_paths -%}
         <a href="{{ "/" | relative_url }}" class="site-title" rel="author">
-            {%- if site.favicon.display -%}
+            {%- if site.favicon.enable -%}
                 <span><img src="{{ site.favicon.name | relative_url}}" alt="favicon"></span>
             {%- endif -%}
             {{ site.title | escape }}

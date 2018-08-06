@@ -9,36 +9,32 @@ layout: default
 
     {{ content }}
 
-    {%- if site.posts.size > 0 -%}
+    {% if site.posts.size > 0 %}
         <h2 class="post-list-title">
             {{ page.list_title | default: "Posts" }}
         </h2>
-        <ul class="post-list">
+        <div class="post-list timeline-wrapper">
             {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
-            {%- for post in site.posts -%}
-            <li>
+            {% for post in site.posts %}
                 <div class="timeline">
                     <div class="timeline-date">
-                        <span class="post-meta">{{ post.date | date: date_format }}</span>
+                        <!-- <span class="post-meta">{{ post.date | date: date_format }}</span> -->
+                        {{ post.date | date: date_format }}
                     </div>
-                    <div class="timeline-content">
-                        <h3>
-                            <a href="{{ post.url | relative_url }}" class="post-link">
-                                {{ post.title | escape }}
-                            </a>
-                        </h3>
-                        {%- if site.show_excerpts -%}
-                            {{ post.excerpt | remove: '<p>' | remove: '</p>' | truncate: 300 }}
-                        {%- endif -%}
+                    <div class="timeline-container">
+                        <div class="timeline-content">
+                            <h3>
+                                <a href="{{ post.url | relative_url }}" class="post-link">
+                                    {{ post.title | escape }}
+                                </a>
+                            </h3>
+                            {% if site.excerpts.enable %}
+                                {{ post.excerpt | remove: '<p>' | remove: '</p>' | truncate: site.excerpts.length }}
+                            {% endif %}
+                        </div>
                     </div>
                 </div>
-            </li>
-            {%- endfor -%}
-        </ul>
-
-        <p class="rss-subscribe">
-            subscribe
-            <a href="{{ "/feed.xml" | relative_url }}">via RSS</a>
-        </p>
-    {%- endif -%}
+            {% endfor %}
+        </div>
+    {% endif %}
 </div>
