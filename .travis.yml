@@ -3,9 +3,6 @@ cache: bundler
 sudo: false
 rvm: 2.5
 
-before_install:
-  - chmod +x script/cibuild.sh
-
 install:
   - gem install bundler
   - bundle install
