@@ -8,7 +8,7 @@ install:
   - bundle install
 
 script:
-  - echo "baseurl\: /jekyll-theme-ink >> ./_config.yml"
+  - echo "baseurl&#58; /jekyll-theme-ink >> ./_config.yml"
   - bundle exec jekyll build
 
 after_success:
