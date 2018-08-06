@@ -12,6 +12,7 @@ script:
 
 after_success:
   - touch ./_site/.nojekyll
+  - echo "baseurl: https://kemingy.github.io/jekyll-theme-ink" >> _config.yml
 
 deploy:
   provider: pages
