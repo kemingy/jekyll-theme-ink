@@ -3,8 +3,14 @@ cache: bundler
 sudo: false
 rvm: 2.5
 
-install: script/bootstrap.sh
+install:
+  - gem install bundler
+  - bundle install
+
 script: script/cibuild.sh
+
+after_success:
+  - touch ./_site/.nojekyll
 
 deploy:
   provider: pages

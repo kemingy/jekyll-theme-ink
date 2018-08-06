@@ -12,5 +12,3 @@ else
     echo "Something is wrong. Please check it."
     exit 1
 fi
-
-touch ./_site/.nojekyll
