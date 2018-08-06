@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-ink"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.1"
   spec.authors       = ["keming"]
   spec.email         = ["kemingy94@gmail.com"]
 
   spec.summary       = "A simple theme based on minima."
-  spec.homepage      = "https://github.com/kemingy"
+  spec.homepage      = "https://github.com/kemingy/jekyll-theme-ink/"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }

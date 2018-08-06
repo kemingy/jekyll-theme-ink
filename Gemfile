@@ -6,5 +6,4 @@ gemspec
 gem 'jekyll-feed'
 gem 'jekyll-seo-tag'
 gem 'jekyll-sitemap'
-
 gem 'jekyll-archives'
