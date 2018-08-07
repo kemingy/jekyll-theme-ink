@@ -18,6 +18,24 @@ Preview [demo](https://kemingy.github.io/jekyll-theme-ink/)
 
 `jekyll-archives` is not supported by GitHub Pages [PR](https://github.com/github/pages-gem/pull/106). You need to build it yourself if you want to use this. You can use Travis CI to do this for you. [Tutorial](https://gist.github.com/kemingy/776ccc839b28c0e8c0f867cddabb0b8e)
 
+## Usage
+
+### Social account
+
+Social account can be set in your `_config.yml` file. This will be shown in the footer of page.
+
+### Header Link
+
+Any file except `404` in root folder will be add to header, like `about.md` and `archive.html`.
+
+### Google Analytics
+
+Set your `google_analytics` UA in `_config.yml`.
+
+### Math
+
+Use `$\alpha$` for inline formula and `$$\Sigma$$` for outline formula.
+
 
 ## Installation
 
