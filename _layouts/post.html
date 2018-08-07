@@ -20,7 +20,7 @@ layout: default
                 </span>
             {%- endif -%}
             {%- for cate in page.categories -%}
-                <a href="/category/{{ cate }}"  class="post-category">
+                <a href="{{ "/category/" | append: cate | relative_url }}" class="post-category">
                     {{ cate | escape }}
                 </a>
             {%- endfor -%}
