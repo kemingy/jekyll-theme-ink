@@ -1,5 +1,7 @@
 # jekyll-theme-ink
 
+[![Gem Version](https://badge.fury.io/rb/jekyll-theme-ink.svg)](https://badge.fury.io/rb/jekyll-theme-ink)
+
 This is a simple jekyll theme based on [minima](https://github.com/jekyll/minima).
 
 Preview [demo](https://kemingy.github.io/jekyll-theme-ink/)
