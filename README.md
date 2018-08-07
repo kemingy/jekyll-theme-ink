@@ -36,6 +36,10 @@ Set your `google_analytics` UA in `_config.yml`.
 
 Use `$\alpha$` for inline formula and `$$\Sigma$$` for outline formula.
 
+### Friends link
+
+Add `name,url` to `_data/friends.csv`.
+
 
 ## Installation
 
